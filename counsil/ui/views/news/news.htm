@@ -1,0 +1,69 @@
+<include href="views/base/header/head.htm"/>
+<body>
+
+<include href="views/base/header/nav.htm"/>
+<div id="a_main_wrapper">
+    <header class="a_header">
+	      
+        <!--login  Modal -->
+		<include href="views/base/header/modal.htm"/>
+        <!--main menu section-->
+		<include href="views/base/header/burger-menu.htm"/>
+        <!--Search  Modal -->
+		<include href="views/news/banner.htm"/>
+        <!--banner section-->
+    </header>
+   <main class="a_main">
+	   <!--listing  section start here-->
+        <div class="a_sectionm a_view_section">
+            <div class="container">
+                <div class="row">
+	                <div class="col-md-10 col-md-offset-1 col-sm-10 col-sm-offset-1 col-xs-12">
+	                    <div class="a_f_block">
+	                        <h4 class="a_h4" style="margin: 30px 0 30px;">Последние события</h4>
+	                        
+                            <div class="a_authur clearfix"> 
+	                            <repeat group="{{@news}}" value="{{@new}}">
+	                            <div class="col-xs-12" style="padding: 0; margin-bottom: 30px">
+	                            <div class="col-xs-12 col-sm-4" style="padding: 0">
+		                            <a href="/counsil/news_detail/{{@new.nid}}"> 
+	                            	<figure>
+	                            		<img class="a_img" src="{{@BASE}}/ui/images/{{@new.npict}}" alt="">
+	                            	</figure>
+                            	</a>
+	                            </div>
+	                            <div class="col-xs-12 col-sm-8" style="padding: 0">
+                            	<div class="a_author_text" style="padding: 0">
+                            		<h4>{{@new.nname}}</h4>
+                            		<span><i class="fa fa-user" aria-hidden="true"></i> {{@new.author}}</span>
+                                    <span><i class="fa fa-clock-o" aria-hidden="true"></i> {{@new.ndate_created}}</span>
+                            		{{substr(@new.ntext,0,400).'...'|raw}}
+                            	</div>
+	                            </div>
+	                            </div>
+                            </repeat>
+                            </div>  
+							<div class="a_control">
+		                        <a class="left carousel-control" href="/counsil/news/{{@offsetBack}}" data-slide="prev"> 
+		                            <i class="fa fa-chevron-left" aria-hidden="true"></i> 
+		                        </a>
+		                        <a class="right carousel-control" href="/counsil/news/{{@offset}}" data-slide="next"> 
+		                            <i class="fa fa-chevron-right" aria-hidden="true"></i> 
+		                        </a>
+	                    	</div>
+                        </div>
+                	</div>
+                </div>
+            </div>
+        </div>        
+    </main>
+    
+    <!--footer start here-->
+<include href="views/base/footer/footer.htm"/>
+</div>
+    <!--Bootstrap core JavaScript-->
+    <script src="{{@BASE}}/ui/js/jquery.js"></script>
+    <script src="{{@BASE}}/ui/js/bootstrap.min.js"></script>
+    <script src="{{@BASE}}/ui/js/custom.js"></script>
+</body>
+</html>

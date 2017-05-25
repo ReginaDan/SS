@@ -1,0 +1,302 @@
+     <aside id="sidebar_left" class="nano nano-light affix">
+
+      <!-- Start: Sidebar Left Content -->
+      <div class="sidebar-left-content nano-content">
+
+        <!-- Start: Sidebar Header -->
+        <header class="sidebar-header">
+
+          <!-- Sidebar Widget - Author -->
+          <div class="sidebar-widget author-widget">
+            <div class="media">
+              <a class="media-left" href="#">
+                <img src="<?php echo $BASE; ?>/ui/views/admin/assets/img/avatars/3.jpg" class="img-responsive">
+              </a>
+              <div class="media-body">
+                <div class="media-links">
+                   <a href="#" class="sidebar-menu-toggle">Online -</a> <a href="<?php echo $BASE; ?>/admin/login">Выйти</a>
+                </div>
+                <div class="media-author"></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Sidebar Widget - Menu (slidedown) -->
+
+          <!-- Sidebar Widget - Search (hidden) -->
+          <div class="sidebar-widget search-widget hidden">
+            <div class="input-group">
+              <span class="input-group-addon">
+                <i class="fa fa-search"></i>
+              </span>
+              <input type="text" id="sidebar-search" class="form-control" placeholder="Search...">
+            </div>
+          </div>
+
+        </header>
+        <!-- End: Sidebar Header -->
+
+        <!-- Start: Sidebar Menu -->
+        <ul class="nav sidebar-menu">
+          <li class="sidebar-label pt20">Разделы</li>
+          <li>
+            <a class="accordion-toggle" href="#">
+              <span class="glyphicon glyphicon-info-sign"></span>
+              <span class="sidebar-title">О нас</span>
+              <span class="caret"></span>
+            </a>
+            <ul class="nav sub-nav">
+              <li>
+                <a href="/counsil/admin/about/info">
+                  <span></span> Основная информация </a>
+              </li>
+              <li>
+                <a href="/counsil/admin/about/missions">
+                  <span ></span> Задачи </a>
+              </li>
+              <li>
+                <a href="/counsil/admin/about/partners">
+                  <span></span> Партнеры </a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a class="accordion-toggle" href="#">
+              <span class="glyphicon glyphicon glyphicon glyphicon-sunglasses"></span>
+              <span class="sidebar-title">Состав</span>
+              <span class="caret"></span>
+            </a>
+            <ul class="nav sub-nav">
+              <li>
+                <a href="/counsil/admin/contain/head">
+                  <span ></span> Председатель </a>
+              </li>
+              <li>
+                <a href="/counsil/admin/contain/secretary">
+                  <span ></span> Секретарь </a>
+              </li>
+              <li>
+                <a href="/counsil/admin/contain/commitees_heads">
+                  <span ></span> Руководители комитетов </a>
+              </li>
+              <li>
+                <a href="/counsil/admin/contain/members">
+                  <span ></span> Члены студсовета </a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a class="accordion-toggle" href="#">
+              <span class="fa fa-institution"></span>
+              <span class="sidebar-title">Комитеты</span>
+              <span class="caret"></span>
+            </a>
+            <ul class="nav sub-nav">
+              <li>
+                <a  href="/counsil/admin/commitees/list">
+                  <span ></span>
+                  Список комитетов
+                </a>
+               </li>
+              <li>
+                <a class="accordion-toggle" href="/counsil/admin/commitees/info">
+                  <span ></span>
+                  Основная информация
+                  <span class="caret"></span>
+                </a>
+                <ul class="nav sub-nav">
+	                <?php foreach (($commitees?:array()) as $com): ?> 
+	                  <li>
+	                    <a href="/counsil/admin/commitees/info/link/<?php echo $com['link']; ?>">
+	                      <?php echo $com['name']; ?>
+
+	                    </a>
+	                  </li>
+					<?php endforeach; ?>
+				</ul>
+              </li>
+              <li>
+                <a class="accordion-toggle" href="/counsil/admin/commitees/projects">
+                  <span></span>
+                  Проекты
+                  <span class="caret"></span>
+                </a>
+                <ul class="nav sub-nav">
+	                <?php foreach (($commitees?:array()) as $com): ?> 
+	                  <li>
+	                    <a href="/counsil/admin/commitees/projects/link/<?php echo $com['link']; ?>">
+	                      <?php echo $com['name']; ?>
+
+	                    </a>
+	                  </li>
+					<?php endforeach; ?>
+				</ul>
+              </li>
+              <li>
+                <a class="accordion-toggle" href="/counsil/admin/commitees/blogs">
+                  <span ></span>
+                  Блоги
+                  <span class="caret"></span>
+                </a>
+               <ul class="nav sub-nav">
+	                <?php foreach (($commitees?:array()) as $com): ?> 
+	                  <li>
+	                    <a href="/counsil/admin/commitees/blogs/link/<?php echo $com['link']; ?>">
+	                      <?php echo $com['name']; ?>
+
+	                    </a>
+	                  </li>
+					<?php endforeach; ?>
+				</ul>
+              </li>
+            </ul>
+            <li>
+            <a class="accordion-toggle" href="#">
+              <span class="glyphicon glyphicon-user "></span>
+              <span class="sidebar-title">Омбудсмен</span>
+              <span class="caret"></span>
+            </a>
+            <ul class="nav sub-nav">
+              <li>
+                <a href="/counsil/admin/ombudsman/info">
+                  <span ></span> Основная информация </a>
+              </li>
+              <li>
+                <a href="/counsil/admin/ombudsman/allocution">
+                  <span ></span> Обращение уполномоченного </a>
+              </li>
+              <li>
+                <a href="/counsil/admin/ombudsman/team">
+                  <span></span> Команда </a>
+              </li>
+              <li>
+                <a href="/counsil/admin/ombudsman/appeals">
+                  <span ></span> Обращения студентов </a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a class="accordion-toggle" href="#">
+              <span class="glyphicon glyphicon-education"></span>
+              <span class="sidebar-title">Факультеты</span>
+              <span class="caret"></span>
+            </a>
+            <ul class="nav sub-nav">
+              <li>
+                <a  href="/counsil/admin/locals/list">
+                  <span ></span>
+                  Список студсоветов факультетов
+                </a>
+                </li>
+              <li>
+                <a class="accordion-toggle" >
+                  <span ></span>
+                  Члены студсовета
+                  <span class="caret"></span>
+                </a>
+                <ul class="nav sub-nav">
+	                <?php foreach (($departments?:array()) as $dep): ?> 
+	                  <li>
+	                    <a href="/counsil/admin/locals/members/link/<?php echo $dep['link']; ?>">
+	                      <?php echo $dep['dname']; ?>
+
+	                    </a>
+	                  </li>
+					<?php endforeach; ?>
+				</ul>
+              </li>
+              <li>
+                <a class="accordion-toggle">
+                  <span></span>
+                  Блог
+                  <span class="caret"></span>
+                </a>
+                <ul class="nav sub-nav">
+	                <?php foreach (($departments?:array()) as $dep): ?> 
+	                  <li>
+	                    <a href="/counsil/admin/locals/blogs/link/<?php echo $dep['link']; ?>">
+	                      <?php echo $dep['dname']; ?>
+
+	                    </a>
+	                  </li>
+					<?php endforeach; ?>
+				</ul>              </li>
+              <li>
+                <a class="accordion-toggle" >
+                  <span ></span>
+                  Документы
+                  <span class="caret"></span>
+                </a>
+                <ul class="nav sub-nav">
+	                <?php foreach (($departments?:array()) as $dep): ?> 
+	                  <li>
+	                    <a href="/counsil/admin/locals/documents/link/<?php echo $dep['link']; ?>">
+	                      <?php echo $dep['dname']; ?>
+
+	                    </a>
+	                  </li>
+					<?php endforeach; ?>
+				</ul>              
+				</li>
+            </ul>
+            <li>
+            <li>
+            <a  href="/counsil/admin/news">
+              <span class="fa fa-newspaper-o"></span>
+              <span class="sidebar-title">Новости</span>
+            </a>
+          </li>
+          <li>
+            <a class="accordion-toggle" href="#">
+              <span class="glyphicon glyphicon-folder-open"></span>
+              <span class="sidebar-title">Документы</span>
+              <span class="caret"></span>
+            </a>
+              <ul class="nav sub-nav">
+              <li>
+                <a  href="/counsil/admin/documents/categories/list">
+                  <span ></span>
+                  Категории документов
+                </a>
+                </li>
+                <li>
+                <a  href="/counsil/admin/documents/list">
+                  <span ></span>
+                  Список документов
+                </a>
+                </li>
+            </ul>
+          </li>
+           <li>
+            <a class="accordion-toggle" href="#">
+              <span class="glyphicon glyphicon-fire"></span>
+              <span class="sidebar-title">Студенческая жизнь</span>
+              <span class="caret"></span>
+            </a>
+            <ul class="nav sub-nav">
+              <li>
+                <a href="/counsil/admin/organizations/list">
+                  <span ></span> Список организаций </a>
+              </li>
+              <li>
+                <a href="/counsil/admin/organizations/heads">
+                  <span ></span> Руководители </a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a  href="/counsil/admin">
+              <span class="glyphicon glyphicon-envelope"></span>
+              <span class="sidebar-title">Обращения студентов</span>
+            </a>
+          </li>
+          <li class="sidebar-label pt20">Управление</li>
+          <li>
+            <a href="/counsil/admin/admins">
+              <span class="fa fa-eye"></span>
+              <span class="sidebar-title">Администраторы</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </aside>

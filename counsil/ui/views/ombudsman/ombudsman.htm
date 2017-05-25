@@ -1,0 +1,86 @@
+<include href="views/base/header/head.htm"/>
+<body>
+
+<include href="views/base/header/nav.htm"/>
+<div id="a_main_wrapper">
+    <header class="a_header">
+	      
+        <!--login  Modal -->
+		<include href="views/base/header/modal.htm"/>
+        <!--main menu section-->
+		<include href="views/base/header/burger-menu.htm"/>
+        <!--Search  Modal -->
+		<include href="views/ombudsman/banner.htm"/>
+        <!--banner section-->
+    </header>
+    
+          <main class="a_main">
+        <div class="a_main_content">
+            <div class="container">
+	            <h4 class="a_h4">ОБРАЩЕНИЕ УПОЛНОМОЧЕННОГО</h4>
+            	<div class="row">
+            		<div class="a_content">
+					<repeat group="{{@ombudsman}}" value="{{@om}}">
+	                <div class="col-sm-4">
+	                    <div class="a_f_block_team a_list_members">
+		                    <div class="a_member">			                   
+				                    <img src="{{@BASE}}/ui/images/{{@om.pphoto}}">
+			                    <h4>{{@om.pname}} {{@om.psurname}}</h4>
+			                    <strong><span>{{@om.dname}}</span></strong>
+			                    <div class="contacts">
+				                    <ul class="a_list a_social_icons_members">
+					                    <li><a href="{{om.pe}}"><i class="fa fa-envelope" aria-hidden="true"></i></a></li>
+				                        <li><a href="{{@om.pf}}"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+				                        <li><a href="{{@om.pt}}"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+				                        <li><a href="{{@om.pv}}"><i class="fa fa-vk" aria-hidden="true"></i></a></li>
+				                    </ul>
+			                    </div>
+		                    </div>
+	                    </div>
+	                 </div>
+	                 </repeat>
+	                </div>
+	            	<div class="col-md-7">
+            			{{@allocution[0].text|raw}}
+	            	</div>
+            		</div>
+            		<div class="a_section a_view_section">
+			            <div class="container">
+			                <div class="row">
+				                <h4 class="a_h4">КОМАНДА</h4>
+				                 <repeat group="{{@member}}" value="{{@mem}}">
+					                <div class="col-sm-4">
+					                    <div class="a_f_block_team a_list_members">
+						                    <div class="a_member">			                   
+								                    <img src="{{@BASE}}/ui/images/{{@mem.pphoto}}">
+							                    <h4>{{@mem.pname}} {{@mem.psurname}}</h4>
+							                    <strong><span>{{@mem.dname}}</span></strong>
+							                    <div class="contacts">
+								                    <ul class="a_list a_social_icons_members">
+									                    <li><a href="{{@mem.pe}}"><i class="fa fa-envelope" aria-hidden="true"></i></a></li>
+								                        <li><a href="{{@mem.pf}}"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+								                        <li><a href="{{@mem.pt}}"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+								                        <li><a href="{{@mem.pv}}"><i class="fa fa-vk" aria-hidden="true"></i></a></li>
+								                    </ul>
+							                    </div>
+						                    </div>
+					                    </div>
+					                </div>
+					              </repeat>
+				            </div>
+			            </div>
+			        </div>
+            </div>
+        </div>
+   </main>
+
+    
+    <!--footer start here-->
+<include href="views/base/footer/footer.htm"/>
+</div>
+    <!--Bootstrap core JavaScript-->
+    <script src="{{@BASE}}/ui/js/jquery.js"></script>
+    <script src="{{@BASE}}/ui/js/bootstrap.min.js"></script>
+    <script src="{{@BASE}}/ui/js/custom.js"></script>
+</body>
+</html>

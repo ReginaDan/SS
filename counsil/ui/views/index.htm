@@ -1,0 +1,81 @@
+<include href="views/base/header/head.htm"/>
+<body>
+
+<include href="views/base/header/nav.htm"/>
+
+<div id="a_main_wrapper">
+    <header class="a_header">
+	      
+        <!--login  Modal -->
+		<include href="views/base/header/modal.htm"/>
+        <!--main menu section-->
+<include href="views/base/header/burger-menu.htm"/>
+        <!--Search  Modal -->
+        <include href="views/base/header/banner.htm"/>
+
+        <!--banner section-->
+    </header>
+
+    <main class="a_main">
+        <div class="a_sectionm a_view_section">
+            <div class="container">
+                <div class="row">
+	                <div class="col-md-8 col-sm-8">
+	                    <div class="a_f_block">
+	                        <h4 class="a_h4" style="margin: 30px 0 30px;">Последние события</h4>
+                            <div class="a_authur clearfix"> 
+	                            <repeat group="{{@news}}" value="{{@new}}">
+	                            <div class="col-xs-12" style="padding: 0; margin-bottom: 30px">
+	                            <div class="col-xs-12 col-sm-5" style="padding: 0">
+		                            <a href="/counsil/news_detail/{{@new.nid}}"> 
+	                            	<figure>
+	                            		<img class="a_img" src="{{@BASE}}/ui/images/{{@new.npict}}" alt="">
+	                            	</figure>
+                            	</a>
+	                            </div>
+	                            <div class="col-xs-12 col-sm-7" style="padding: 0">
+                            	<div class="a_author_text" style="padding: 0">
+                            		<h4>{{@new.nname}}</h4>
+                            		<span><i class="fa fa-user" aria-hidden="true"></i> {{@new.author}}</span>
+                                    <span><i class="fa fa-clock-o" aria-hidden="true"></i> {{@new.ndate_created}}</span>
+                            		{{substr(@new.ntext,0,400).'...'|raw}}
+                            	</div>
+	                            </div>
+	                            </div>
+                            </repeat>
+                                                         </div>
+                            
+                        </div>
+                	</div>
+                	<div class="col-xs-12 col-sm-4  col-md-3 col-md-offset-1">
+                            <h4 class="a_h4" style="margin: 30px 0 30px;">Инициативы</h4>
+                            <ul class="a_list a_categories_list" style="margin-bottom: 40px; padding-left: 10px;">
+	                           <repeat group="{{@initiatives}}" value="{{@init}}">
+                           <li><a href="#."><i class="fa fa-check-square" aria-hidden="true"></i>{{@init.name}}</a></li>
+                           </repeat>
+                            </ul>
+
+                            <div class="a_q_box ">
+                            <h4>Документы<span> </span> <a href="/counsil/documents">Все</a></h4>
+                            <div class="a_q_list">
+                                <ul class="a_list">
+	                                <repeat group="{{@documents}}" value="{{@doc}}">
+									   <li><a href="#."><i class="fa fa-file-text-o" aria-hidden="true"></i> {{@doc.name}}</a></li>
+									</repeat>
+                                </ul>
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </div>        
+    </main>
+    
+    <!--footer start here-->
+<include href="views/base/footer/footer.htm"/>
+</div>
+    <!--Bootstrap core JavaScript-->
+    <script src="{{@BASE}}/ui/js/jquery.js"></script>
+    <script src="{{@BASE}}/ui/js/bootstrap.min.js"></script>
+    <script src="{{@BASE}}/ui/js/custom.js"></script>
+</body>
+</html>

@@ -1,0 +1,86 @@
+Time:2015-10-04 11:11:18 | Type:Success | IP:::1 | Message:User #1 logged out on all connections
+Time:2015-10-04 11:11:20 | Type:Success | IP:::1 | Message:Successful login by user #1
+Time:2015-10-04 11:11:20 | Type:Error | IP:::1 | Message:User has no right to visit this page
+Time:2015-10-04 11:12:02 | Type:Success | IP:::1 | Message:User #1 logged out on all connections
+Time:2015-10-04 11:17:21 | Type:Error | IP:::1 | Message:Wrong login or password
+Time:2015-10-04 18:50:14 | Type:Success | IP:::1 | Message:Successful login by user #1
+Time:2015-10-04 18:50:17 | Type:Success | IP:::1 | Message:User #1 logged out on all connections
+Time:2015-10-04 18:50:58 | Type:Success | IP:::1 | Message:Successful login by user #1
+Time:2015-10-04 18:50:59 | Type:Success | IP:::1 | Message:User #1 logged out on all connections
+Time:2017-03-21 21:07:25 | Type:Error | IP:188.32.178.110 | Message:SQLSTATE[HY000] [1044] Access denied for user '045254168_org'@'%' to database 'klimenkoyuri_orgland'
+Time:2017-03-21 21:07:25 | Type:Error | IP:188.32.178.110 | Message:SQLSTATE[HY000] [1044] Access denied for user '045254168_org'@'%' to database 'klimenkoyuri_orgland'
+Time:2017-03-29 23:34:31 | Type:Error | IP:188.32.178.110 | Message:Empty fields
+Time:2017-03-29 23:34:32 | Type:Error | IP:188.32.178.110 | Message:Empty fields
+Time:2017-03-29 23:34:34 | Type:Error | IP:188.32.178.110 | Message:Empty fields
+Time:2017-03-29 23:34:39 | Type:Error | IP:188.32.178.110 | Message:Empty fields
+Time:2017-03-29 23:35:53 | Type:Error | IP:188.32.178.110 | Message:Empty fields
+Time:2017-03-29 23:35:55 | Type:Error | IP:188.32.178.110 | Message:Empty fields
+Time:2017-03-29 23:35:55 | Type:Error | IP:188.32.178.110 | Message:Empty fields
+Time:2017-03-29 23:35:55 | Type:Error | IP:188.32.178.110 | Message:Empty fields
+Time:2017-03-29 23:35:55 | Type:Error | IP:188.32.178.110 | Message:Empty fields
+Time:2017-03-29 23:35:56 | Type:Error | IP:188.32.178.110 | Message:Empty fields
+Time:2017-03-29 23:41:23 | Type:Error | IP:188.32.178.110 | Message:Empty fields
+Time:2017-03-29 23:41:24 | Type:Error | IP:188.32.178.110 | Message:Empty fields
+Time:2017-03-29 23:41:24 | Type:Error | IP:188.32.178.110 | Message:Empty fields
+Time:2017-03-29 23:42:17 | Type:Error | IP:188.32.178.110 | Message:Empty fields
+Time:2017-03-29 23:42:19 | Type:Error | IP:188.32.178.110 | Message:Empty fields
+Time:2017-03-29 23:42:19 | Type:Error | IP:188.32.178.110 | Message:Empty fields
+Time:2017-03-29 23:46:13 | Type:Error | IP:188.32.178.110 | Message:Wrong login or password
+Time:2017-03-29 23:46:14 | Type:Error | IP:188.32.178.110 | Message:Wrong login or password
+Time:2017-03-29 23:46:22 | Type:Error | IP:188.32.178.110 | Message:Wrong login or password
+Time:2017-03-29 23:52:24 | Type:Error | IP:188.32.178.110 | Message:Wrong login or password
+Time:2017-03-29 23:55:46 | Type:Error | IP:188.32.178.110 | Message:Wrong login or password
+Time:2017-03-29 23:55:49 | Type:Error | IP:188.32.178.110 | Message:Wrong login or password
+Time:2017-03-29 23:57:05 | Type:Error | IP:188.32.178.110 | Message:Wrong login or password
+Time:2017-03-29 23:58:23 | Type:Error | IP:188.32.178.110 | Message:Wrong login or password
+Time:2017-03-29 23:58:55 | Type:Error | IP:188.32.178.110 | Message:Wrong login or password
+Time:2017-03-29 23:59:43 | Type:Error | IP:188.32.178.110 | Message:Empty fields
+Time:2017-03-29 23:59:44 | Type:Error | IP:188.32.178.110 | Message:Empty fields
+Time:2017-03-29 23:59:44 | Type:Error | IP:188.32.178.110 | Message:Empty fields
+Time:2017-03-29 23:59:45 | Type:Error | IP:188.32.178.110 | Message:Empty fields
+Time:2017-03-29 23:59:45 | Type:Error | IP:188.32.178.110 | Message:Empty fields
+Time:2017-03-30 00:04:28 | Type:Error | IP:188.32.178.110 | Message:Wrong login or password
+Time:2017-03-30 00:04:30 | Type:Error | IP:188.32.178.110 | Message:Wrong login or password
+Time:2017-03-30 00:16:10 | Type:Error | IP:188.32.178.110 | Message:Wrong login or password
+Time:2017-03-30 10:56:58 | Type:Success | IP:79.164.97.248 | Message:Successful login by user #11
+Time:2017-03-30 10:57:00 | Type:Success | IP:79.164.97.248 | Message:Successful login by user #11
+Time:2017-03-30 16:11:35 | Type:Error | IP:109.252.109.38 | Message:Wrong login or password
+Time:2017-03-30 16:11:41 | Type:Error | IP:109.252.109.38 | Message:Wrong login or password
+Time:2017-03-30 16:11:42 | Type:Error | IP:109.252.109.38 | Message:Wrong login or password
+Time:2017-03-30 16:11:44 | Type:Error | IP:109.252.109.38 | Message:Wrong login or password
+Time:2017-03-30 16:11:44 | Type:Error | IP:109.252.109.38 | Message:Wrong login or password
+Time:2017-03-30 16:11:44 | Type:Error | IP:109.252.109.38 | Message:Wrong login or password
+Time:2017-03-30 16:11:45 | Type:Error | IP:109.252.109.38 | Message:Wrong login or password
+Time:2017-03-30 16:11:45 | Type:Error | IP:109.252.109.38 | Message:Wrong login or password
+Time:2017-03-30 16:11:45 | Type:Error | IP:109.252.109.38 | Message:Wrong login or password
+Time:2017-03-30 16:11:45 | Type:Error | IP:109.252.109.38 | Message:Wrong login or password
+Time:2017-03-30 16:11:45 | Type:Error | IP:109.252.109.38 | Message:Wrong login or password
+Time:2017-03-30 20:22:55 | Type:Error | IP:37.146.103.85 | Message:Empty fields
+Time:2017-04-01 04:28:31 | Type:Error | IP:212.35.164.18 | Message:Empty fields
+Time:2017-05-15 18:26:34 | Type:Error | IP:144.76.7.74 | Message:Wrong login or password
+Time:2017-05-15 18:28:18 | Type:Error | IP:144.76.7.74 | Message:Wrong login or password
+Time:2017-05-15 18:33:00 | Type:Error | IP:144.76.7.74 | Message:Wrong login or password
+Time:2017-05-15 18:37:16 | Type:Error | IP:144.76.7.74 | Message:Wrong login or password
+Time:2017-05-15 18:38:35 | Type:Error | IP:144.76.7.74 | Message:Wrong login or password
+Time:2017-05-15 18:48:02 | Type:Error | IP:144.76.7.74 | Message:Wrong login or password
+Time:2017-05-15 18:53:20 | Type:Error | IP:144.76.7.74 | Message:Wrong login or password
+Time:2017-05-15 18:55:35 | Type:Error | IP:144.76.7.74 | Message:Wrong login or password
+Time:2017-05-15 23:27:21 | Type:Error | IP:144.76.7.74 | Message:Wrong login or password
+Time:2017-05-16 22:10:47 | Type:Error | IP:144.76.7.74 | Message:Wrong login or password
+Time:2017-05-16 22:17:28 | Type:Error | IP:144.76.7.74 | Message:Wrong login or password
+Time:2017-05-16 22:17:34 | Type:Error | IP:144.76.7.74 | Message:Wrong login or password
+Time:2017-05-16 22:19:38 | Type:Error | IP:144.76.7.74 | Message:Wrong login or password
+Time:2017-05-16 22:20:06 | Type:Error | IP:144.76.7.74 | Message:Wrong login or password
+Time:2017-05-16 22:26:14 | Type:Error | IP:144.76.7.74 | Message:Wrong login or password
+Time:2017-05-16 22:34:43 | Type:Error | IP:144.76.7.74 | Message:Wrong login or password
+Time:2017-05-16 22:36:33 | Type:Error | IP:144.76.7.74 | Message:Wrong login or password
+Time:2017-05-16 22:37:12 | Type:Error | IP:144.76.7.74 | Message:Empty fields
+Time:2017-05-16 22:49:24 | Type:Error | IP:144.76.7.74 | Message:Empty fields
+Time:2017-05-16 22:49:30 | Type:Error | IP:144.76.7.74 | Message:Empty fields
+Time:2017-05-16 22:50:35 | Type:Error | IP:144.76.7.74 | Message:Empty fields
+Time:2017-05-16 23:15:17 | Type:Error | IP:144.76.7.74 | Message:Empty fields
+Time:2017-05-16 23:15:46 | Type:Error | IP:144.76.7.74 | Message:Empty fields
+Time:2017-05-16 23:15:52 | Type:Error | IP:144.76.7.74 | Message:Empty fields
+Time:2017-05-16 23:21:23 | Type:Error | IP:144.76.7.74 | Message:Empty fields
+Time:2017-05-16 23:23:55 | Type:Error | IP:144.76.7.74 | Message:Empty fields
+Time:2017-05-16 23:24:06 | Type:Error | IP:144.76.7.74 | Message:Empty fields
